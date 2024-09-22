@@ -18,20 +18,20 @@ if let firstInput = readLine() {
     for arr in checkArr.values {
         
         if arr[0] > maxCount {
-            if arr[0] % 2 == 0 {
-                totalRoomNum += (arr[0] / 2)
+            if arr[0] % maxCount == 0 {
+                totalRoomNum += (arr[0] / maxCount)
             } else {
-                totalRoomNum += (arr[0] / 2 + 1)
+                totalRoomNum += (arr[0] / maxCount + 1)
             }
         } else if arr[0] <= maxCount && arr[0] != 0 {
             totalRoomNum += 1
         }
         
         if arr[1] > maxCount {
-            if arr[1] % 2 == 0 {
-                totalRoomNum += (arr[1] / 2)
+            if arr[1] % maxCount == 0 {
+                totalRoomNum += (arr[1] / maxCount)
             } else {
-                totalRoomNum += (arr[1] / 2 + 1)
+                totalRoomNum += (arr[1] / maxCount + 1)
             }
         } else if arr[1] <= maxCount && arr[1] != 0 {
             totalRoomNum += 1
